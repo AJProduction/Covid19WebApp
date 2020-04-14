@@ -84,7 +84,7 @@ p {
   text-align: center;
 }
 
-#my-form select {
+#my-form select option {
   text-align: center;
   align-items: center;
   align-content: center;
