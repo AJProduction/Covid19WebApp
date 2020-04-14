@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID 19 WEB APP</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="theme">COVID 19 ESTIMATOR</h1>
+      <p id="desc">
+        This web app helps to estimate the impact of the current pandemic
+        "Covid-19" in Regions through cases reported.
+      </p>
+    </header>
+
+    <div id="showcase">
+      <section class="container">
+        <form action="" id="my-form">
+          <h1>Add your data</h1>
+          <div id="msg"></div>
+
+          <div>
+            <label for="population">Population:</label>
+            <input
+              type="number"
+              id="data-population"
+              placeholder="Input number of population"
+            />
+          </div>
+
+          <div>
+            <label for="timeToElapse">Time to Elapse:</label>
+            <input type="number" id="data-time-to-elapse" />
+          </div>
+
+          <div>
+            <label for="reportedCases">Reported Cases:</label>
+            <input type="number" id="data-reported-cases" />
+          </div>
+
+          <div>
+            <label for="totalHospitalBeds">Total Hospital Beds:</label>
+            <input type="number" id="data-total-hospital-beds" />
+          </div>
+
+          <div>
+            <label for="periodType">Choose a period Type:</label>
+            <select name="" id="data-period-type">
+              <option value="days">Days</option>
+              <option value="weeks">Weeks</option>
+              <option value="months">Months</option>
+            </select>
+          </div>
+
+          <input
+            type="submit"
+            class="btn"
+            id="data-go-estimate"
+            value="Submit"
+          />
+        </form>
+
+        <ul class="items">
+          <li class="item">Estimator Result</li>
+        </ul>
+
+        <ul id="users"></ul>
+      </section>
+    </div>
+
+    <footer id="footer">
+      <p>Copyright &copy; 2020, CovidwebApp All Reserved by Anjola Adeuyi</p>
+      <div>
+        <a href="#"> Terms of use </a> | <a href="#"> Privacy Policy</a>
+      </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
